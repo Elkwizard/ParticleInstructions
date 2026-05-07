@@ -1,0 +1,327 @@
+<!DOCTYPE html><html><head>
+      <title>instructions</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\banan\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.20\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<style>
+    h1, h2, h3 {
+        border-bottom: 1px grey solid;
+        padding-bottom: 0.2em;
+    }
+
+    h1 {
+        font-size: 1.7em !important;
+    }
+
+    h2 {
+        font-size: 1.3em !important;
+    }
+
+    h3 {
+        color: #333 !important;
+        font-size: 1.15em !important;
+    }
+
+    h4 {
+        color: #444 !important;
+        font-size: 1.1em !important;
+    }
+
+    :root {
+        --radius: 0.4em;
+    }
+
+    figure {
+        float: right;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+            width: 2.3in;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            object-position: 50% 50%;
+            border: 1px black solid;
+        }
+
+        figcaption {
+            font-style: italic;
+            text-align: center;
+        }
+    }
+
+    .figure-container {
+        float: right;
+        figure {
+            float: none;
+        }
+    }
+
+    /* code:not([class]) {
+        color: #777;
+    } */
+
+    .box {
+        padding: 0.5em;
+        border-radius: var(--radius);
+        margin-bottom: 0.75em;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+
+        > * {
+            margin: 0;
+        }
+
+        p::before {
+            font-weight: bold;
+            color: black;
+        }
+
+        &.note {
+            /* border: 1px black solid; */
+            background: #bec;
+            p::before { content: "Note: "; }
+        }
+        &.caution {
+            background: #ff9;
+            /* border: 1px black solid; */
+            p::before { content: "⚠️Warning: "; }
+        }
+
+
+    }
+
+    .clearfix {
+        clear: both;
+        overflow: auto;
+    }
+</style>
+<h1 id="how-to-create-a-hengine-particle-system">How to Create a Hengine Particle System </h1>
+<figure>
+    <img src="final.gif" alt="randomly sized and colored circles emerging from a central point, at a rate of 120 per second">
+    <figcaption>Figure 1: the goal</figcaption>
+</figure>
+<p>This document provides guidance on creating a basic, customizable particle system using the <a href="https://www.github.com/Elkwizard/Hengine">Hengine</a> web game engine and the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a> programming language. In particular, it covers the basics of <strong>2D</strong> particle systems, including their graphics, physics, and implementation in one engine. By the end of this process, you will have created a particle system similar to the one shown in Figure 1. Notably, this does not discuss JavaScript syntax or semantics, nor the fundamentals of computer graphics or classical physics.</p>
+<div class="clearfix"></div>
+<h2 id="prerequisites">Prerequisites </h2>
+<p>You need a few things before you can get started. Unfortunately, some of these take months or years to acquire. The prerequisites are listed below, in decreasing order of difficulty:</p>
+<ol>
+<li>1-2 hours of free time</li>
+<li>Proficiency in JavaScript syntax and semantics (HTML and CSS knowledge are not necessary)</li>
+<li>Basic knowledge of physical concepts like position, velocity, and acceleration</li>
+<li>Very basic knowledge of integral and differential calculus</li>
+<li>A computer, with:
+<ul>
+<li>Internet access (not necessarily reliable)</li>
+<li>A text editor: VSCode, Notepad++, XCode, etc.</li>
+<li>A browser: Chrome, Firefox, or Edge work best.</li>
+</ul>
+</li>
+</ol>
+<div class="note box">
+<p>If you don't meet the first few requirements but are interested in doing so, the websites <a href="https://developer.mozilla.org">MDN</a> and <a href="https://learnopengl.com">Learn OpenGL</a> are excellent resources for learning the basics of JavaScript and computer graphics.</p>
+</div>
+<h2 id="creating-the-particle-system">Creating the Particle System </h2>
+<p>Now that you have gathered your supplies, you can begin the project. The process is divided into four broad phases. An overview of those phases is given here, but if you are okay with surprises, you can safely skip this summary.</p>
+<ol>
+<li>In the first phase, you will use the Hengine's shorthand project system to quickly create an environment in which you can develop the particles.</li>
+<li>In the second phase, you will learn the basics of the Hengine's object system, and use it to construct an empty particle spawner.</li>
+<li>In the third phase, you will learn how to create an increasingly interesting but generic particle system, similar to the one shown in Figure 1.</li>
+<li>In the final (optional) phase, you will be exposed to various techniques for customizing and improving the visuals of your particle system.</li>
+</ol>
+<p>Let's begin!</p>
+<h3 id="phase-1-creating-the-project">Phase 1: Creating the Project </h3>
+<p>Creating a new project in the Hengine is extremely simple if you have consistent internet access:</p>
+<ol>
+<li><strong>Create a blank text file with the <code>.html</code> extension</strong> (e.g. <code>myParticles.html</code>) using your text editor of choice. Save this file to your computer.</li>
+<li>Within the file, <strong>add the following HTML:</strong><pre data-role="codeBlock" data-info="html" class="language-html html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://elkwizard.github.io/Hengine/Hengine.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+    <span class="token comment">// this is where the rest of your code will go</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></li>
+<li><strong>Open the file in your browser of choice.</strong> It displays a blank white screen.</li>
+</ol>
+<div class="note box">
+<p>Keep this browser tab open for the duration of the project. If you make changes to your code and the program seems to behave the same, remember to save your file and reload the tab. Additionally, if things don't seem to be working properly, open the developer console (with Right Click + Inspect, Ctrl/Cmd + Shift + J, or F12) to see possible error messages.</p>
+</div>
+<div class="caution box">
+<p>If you do not have consistent internet access, then your program will fail to run. If you have <a href="https://git-scm.com/install/">Git</a> installed, you can avoid this by running <code>git clone https://www.github.com/Elkwizard/Hengine.git</code> to get a local copy of the engine. Then, update the above HTML to reference the <code>Hengine.js</code> file in the root of your local copy, rather than the one at <code>https://...</code>. This avoids the need for repeated network requests.</p>
+</div>
+<h3 id="optional-particles-conceptual-background">(Optional) Particles: Conceptual Background </h3>
+<p>The fundamental concept behind creating a particle effect like the one in Figure 1 is that of the "particle spawner". A particle spawner is an imaginary "object" which exists at a given location and emits particles over time. Each particle then becomes an independent entity with its own motion and behavior which (in most cases) eventually decays and is deleted. By repeating this process, an infinite stream of particles can be created without consuming infinite memory and processing power.</p>
+<h3 id="phase-2-creating-a-basic-system">Phase 2: Creating a Basic System </h3>
+<p>In the Hengine, the world consists of a set of <code>WorldObject</code>s, each of which can appear on the screen and respond to various events from the user or the engine. Collections of event-responses or "behaviors" are encapsulated into the <code>ElementScript</code> class. To create your particle system, you will create an object to act as a spawner, and then give it the Hengine's built-in particle management behaviors.</p>
+<ol>
+<li><strong>Create a new object to act as your spawner</strong>, by adding the following code in between the <code>&lt;script&gt;</code> tags of your HTML file from phase 1:<pre data-role="codeBlock" data-info="js" class="language-javascript js"><code><span class="token keyword keyword-const">const</span> spawner <span class="token operator">=</span> scene<span class="token punctuation">.</span><span class="token property-access">main</span><span class="token punctuation">.</span><span class="token method function property-access">addElement</span><span class="token punctuation">(</span>
+    <span class="token string">"particleSpawner"</span><span class="token punctuation">,</span>
+    width <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">,</span> height <span class="token operator">/</span> <span class="token number">2</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>The second and third arguments to <code>addElement()</code> specify the x- and y-coordinates of the object, which in this case is the middle of the screen.</li>
+<li><strong>Give the spawner object the particle spawning behavior</strong> with:<pre data-role="codeBlock" data-info="js" class="language-javascript js"><code>spawner<span class="token punctuation">.</span><span class="token property-access">scripts</span><span class="token punctuation">.</span><span class="token method function property-access">add</span><span class="token punctuation">(</span><span class="token constant">PARTICLE_SPAWNER</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token comment">// options will go here</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></li>
+</ol>
+<div class="note box">
+<p>After completing this phase and reloading the page, you should still just see a white page. This is expected behavior! The spawner is invisible and so are its particles, so there's nothing to see yet.</p>
+</div>
+<h3 id="phase-3-making-it-visible">Phase 3: Making It Visible </h3>
+<p>Now that you have a particle spawner, invisible though it may be, you've reached the fun part! The rest of this guide will be spent in the object literal argument to <code>spawner.scripts.add()</code>, which is used to provide custom particle behavior.</p>
+<div class="figure-container">
+    <figure>
+        <img src="dot.png" alt="A small black dot in a large white void">
+        <figcaption>Figure 2: your first particle</figcaption>
+    </figure>
+    <figure>
+        <img src="motes.gif" alt="many black dots radiating outwards">
+        <figcaption>Figure 3: randomized velocities</figcaption>
+    </figure>
+    <figure>
+        <img src="phase3.gif" alt="many colorful dots radiating outwards">
+        <figcaption>Figure 4: randomized user data</figcaption>
+    </figure>
+</div>
+<ol>
+<li>
+<p><strong>Add a function called <code>draw</code> to the object literal to render your particles.</strong> It needs two arguments:</p>
+<ul>
+<li><code>renderer</code>: This provides methods for drawing shapes on the screen.</li>
+<li><code>particle</code>: This is an object representing an individual particle. This <code>draw</code> method is be called every frame for every particle, and should render that particle to the screen.</li>
+</ul>
+<p>A good starting point is this function, which draws each particle as a black filled-in circle with a 5-pixel radius. If you have done everything correctly, you see a small black dot (Figure 2).</p>
+<pre data-role="codeBlock" data-info="js" class="language-javascript js"><code><span class="token function">draw</span><span class="token punctuation">(</span><span class="token parameter">renderer<span class="token punctuation">,</span> particle</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    renderer
+        <span class="token punctuation">.</span><span class="token method function property-access">draw</span><span class="token punctuation">(</span><span class="token maybe-class-name">Color</span><span class="token punctuation">.</span><span class="token constant">BLACK</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token method function property-access">circle</span><span class="token punctuation">(</span>particle<span class="token punctuation">.</span><span class="token property-access">position</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre></li>
+<li>
+<p><strong>Give your particles velocity by creating an <code>init</code> function in the object literal.</strong> <code>init</code> is be called to initialize each particle when it first spawns. The <code>init</code> shown below gives each particle a velocity in a random direction with a speed between 3 and 5 pixels per frame. After reloading, you now see moving dots (Figure 3).</p>
+<pre data-role="codeBlock" data-info="js" class="language-javascript js"><code><span class="token function">init</span><span class="token punctuation">(</span><span class="token parameter">particle</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    particle<span class="token punctuation">.</span><span class="token property-access">velocity</span> <span class="token operator">=</span> <span class="token maybe-class-name">Vector2</span><span class="token punctuation">.</span><span class="token method function property-access">polar</span><span class="token punctuation">(</span>
+        <span class="token maybe-class-name">Random</span><span class="token punctuation">.</span><span class="token method function property-access">angle</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token maybe-class-name">Random</span><span class="token punctuation">.</span><span class="token method function property-access">range</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre></li>
+<li>
+<p><strong>Give your particles variation by adding custom per-particle data.</strong> Each particle object has an embedded <code>.data</code> object which can be used to store whatever you want. To wrap up this phase, add <code>.color</code> and <code>.radius</code> data to your particles in <code>init</code>, and then use that information in <code>draw</code>. By again using <code>Random</code>, we can give each particle a random color and a radius between 2 and 8 pixels. After implementing this correctly, you should see something very similar to Figure 1!</p>
+<pre data-role="codeBlock" data-info="js" class="language-javascript js"><code><span class="token comment">// in init (after current code)</span>
+particle<span class="token punctuation">.</span><span class="token property-access">data</span><span class="token punctuation">.</span><span class="token property-access">color</span> <span class="token operator">=</span> <span class="token maybe-class-name">Random</span><span class="token punctuation">.</span><span class="token method function property-access">color</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+particle<span class="token punctuation">.</span><span class="token property-access">data</span><span class="token punctuation">.</span><span class="token property-access">radius</span> <span class="token operator">=</span> <span class="token maybe-class-name">Random</span><span class="token punctuation">.</span><span class="token method function property-access">range</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// in draw (replacing current code)</span>
+renderer
+    <span class="token punctuation">.</span><span class="token method function property-access">draw</span><span class="token punctuation">(</span>particle<span class="token punctuation">.</span><span class="token property-access">data</span><span class="token punctuation">.</span><span class="token property-access">color</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token method function property-access">circle</span><span class="token punctuation">(</span>particle<span class="token punctuation">.</span><span class="token property-access">position</span><span class="token punctuation">,</span> particle<span class="token punctuation">.</span><span class="token property-access">data</span><span class="token punctuation">.</span><span class="token property-access">radius</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></li>
+</ol>
+<div class="clearfix"></div>
+<div class="note box">
+<p>For more information on the particle system API, as well as the available methods on <code>renderer</code> and <code>particle</code>, see the <a href="https://elkwizard.github.io/Hengine">Hengine Documentation</a>. In particular, information about <code>renderer</code> can be found under <code>Artist2D</code>, and information about <code>particle</code> can be found under <code>PARTICLE_SYSTEM</code>.</p>
+</div>	
+<h3 id="optional-phase-4-further-customization">(Optional) Phase 4: Further Customization </h3>
+<p>This section is unordered and optional. Feel free to complete any of these tasks that appeal to you, in any order.</p>
+<h4 id="adding-gravity">Adding Gravity </h4>
+<figure>
+    <img src="fall.png" alt="Randomly colored particles spreading radially while falling">
+    <figcaption>Figure 5: falling particles</figcaption>
+</figure>
+<p>To make your particles fall, simply:</p>
+<ol>
+<li><strong>Add <code>falls: true,</code> to the object literal,</strong> alongside <code>init</code> and <code>draw</code>.</li>
+<li>If you want to customize the gravitational acceleration, <strong>set it in the global scope</strong> at the top of the file. The gravity value has units of pixels per frame<sup>2</sup>.<pre data-role="codeBlock" data-info="js" class="language-javascript js"><code><span class="token comment">// values between 0.1 and 1 typically work best </span>
+scene<span class="token punctuation">.</span><span class="token property-access">physics</span><span class="token punctuation">.</span><span class="token property-access">gravity</span><span class="token punctuation">.</span><span class="token property-access">y</span> <span class="token operator">=</span> <span class="token number">0.1</span><span class="token punctuation">;</span>
+
+<span class="token comment">// the rest of the file (no changes needed)</span>
+<span class="token keyword keyword-const">const</span> spawner <span class="token operator">=</span> <span class="token spread operator">...</span>
+spawner<span class="token punctuation">.</span><span class="token property-access">scripts</span><span class="token punctuation">.</span><span class="token method function property-access">add</span><span class="token punctuation">(</span><span class="token constant">PARTICLE_SPAWNER</span><span class="token punctuation">,</span> <span class="token spread operator">...</span>
+</code></pre></li>
+</ol>
+<p>If you have completed these steps correctly, your particles are now moving in downward parabolic arcs, as shown in Figure 5.</p>
+<h4 id="fading-the-particles-over-time">Fading the Particles Over Time </h4>
+<p>To make your particles fade, you need information about where they are in their life cycle. This comes in the form of <code>particle.timer</code>, a value which interpolates from 0 to 1 over the course of the particle's life. Thus, to make the particles fade:</p>
+<ol>
+<li><strong>Add <code>renderer.alpha = 1 - particle.timer;</code> to the beginning of <code>draw</code>'s body.</strong> This causes the opacity to linearly decrease over the particle's lifetime.</li>
+<li>For more natural-looking fading behavior, <strong>try easing functions in the <code>Interpolation</code> class.</strong> For example, the following code concentrates the fade-out later in the particle's life:<pre data-role="codeBlock" data-info="js" class="language-javascript js"><code>renderer<span class="token punctuation">.</span><span class="token property-access">alpha</span> <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">-</span> <span class="token maybe-class-name">Interpolation</span><span class="token punctuation">.</span><span class="token method function property-access">increasing</span><span class="token punctuation">(</span>particle<span class="token punctuation">.</span><span class="token property-access">timer</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></li>
+</ol>
+<p>If you have followed these steps correctly, your particles now gradually fade out rather than vanishing.</p>
+<div class="clearfix"></div>
+<div class="caution box">
+<p>If you have been exploring various other options of the particle system, this example code may produce an unsightly "popping" effect where nearly-invisible particles reappear for a single frame. This is due to floating-point errors and can be avoided by wrapping your <code>1 - ...</code> in <code>Math.max(0, 1 - ...)</code>.</p>
+</div>
+<h4 id="customizing-the-particles-shape">Customizing the Particles' Shape </h4>
+<p>The Hengine's support for <a href="https://elkwizard.github.io/Hengine">many non-circle shapes</a> can be found under <code>Artist2D</code>, <code>DrawRenderer</code>, and <code>StrokeRenderer</code>. To get started with them, the following example explains how to transform your particles into small "vectors" pointing in their direction of motion.</p>
+<figure>
+    <img src="vectors.png" alt="multi-colored arrows radiating outward">
+    <figcaption>Figure 6: custom shapes</figcaption>
+</figure>
+<ol>
+<li><strong>Compute the direction of motion</strong> at the top of <code>draw()</code>. Conveniently enough, this is just the direction (normalization) of <code>particle.velocity</code>:<pre data-role="codeBlock" data-info="js" class="language-javascript js"><code><span class="token keyword keyword-const">const</span> direction <span class="token operator">=</span> particle<span class="token punctuation">.</span><span class="token property-access">velocity</span><span class="token punctuation">.</span><span class="token property-access">normalized</span><span class="token punctuation">;</span>
+</code></pre></li>
+<li><strong>Replace your <code>renderer.draw...circle</code> statement with a <code>renderer.stroke...arrow</code> statement.</strong> You can re-use your custom <code>data.radius</code> property to make the arrows have varying lengths:<pre data-role="codeBlock" data-info="js" class="language-javascript js"><code><span class="token comment">// in draw (replacing renderer.draw...)</span>
+<span class="token comment">// length is scaled up to be more visible</span>
+<span class="token keyword keyword-const">const</span> length <span class="token operator">=</span> particle<span class="token punctuation">.</span><span class="token property-access">data</span><span class="token punctuation">.</span><span class="token property-access">radius</span> <span class="token operator">*</span> <span class="token number">3</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-const">const</span> start <span class="token operator">=</span> particle<span class="token punctuation">.</span><span class="token property-access">position</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-const">const</span> end <span class="token operator">=</span> start<span class="token punctuation">.</span><span class="token method function property-access">plus</span><span class="token punctuation">(</span>direction<span class="token punctuation">.</span><span class="token method function property-access">times</span><span class="token punctuation">(</span>length<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+renderer
+    <span class="token punctuation">.</span><span class="token method function property-access">stroke</span><span class="token punctuation">(</span>particle<span class="token punctuation">.</span><span class="token property-access">data</span><span class="token punctuation">.</span><span class="token property-access">color</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token method function property-access">arrow</span><span class="token punctuation">(</span>start<span class="token punctuation">,</span> end<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></li>
+</ol>
+<p>If you have followed these steps correctly, you now have a colorful vector field as shown in Figure 6!</p>
+<h4 id="applying-custom-movement">Applying Custom Movement </h4>
+<p>One good way to diversify the appearance of your particles is to change their movement after they spawn. This is achieved in the Hengine through the use of an <code>update(particle)</code> function which is called on each time step. Within this function, the entire JavaScript language and Hengine libraries at your disposal. Below is one example of this function:</p>
+<figure>
+    <img src="ricochet.png" alt="a cloud of particles moving in random directions">
+    <figcaption>Figure 7: changing velocities</figcaption>
+</figure>
+<ol>
+<li><strong>Add an <code>update(particle)</code> function to the object literal.</strong><pre data-role="codeBlock" data-info="js" class="language-javascript js"><code><span class="token function">update</span><span class="token punctuation">(</span><span class="token parameter">particle</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// this is run every frame</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre></li>
+<li><strong>Change the particle's movement occasionally.</strong> Insert the following code into <code>update(particle)</code>:<pre data-role="codeBlock" data-info="js" class="language-javascript js"><code><span class="token comment">// in update</span>
+<span class="token keyword control-flow keyword-if">if</span> <span class="token punctuation">(</span><span class="token maybe-class-name">Random</span><span class="token punctuation">.</span><span class="token method function property-access">bool</span><span class="token punctuation">(</span><span class="token number">0.1</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// 10% chance each frame</span>
+    particle<span class="token punctuation">.</span><span class="token property-access">velocity</span><span class="token punctuation">.</span><span class="token property-access">angle</span> <span class="token operator">=</span> <span class="token maybe-class-name">Random</span><span class="token punctuation">.</span><span class="token method function property-access">angle</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></li>
+</ol>
+<p>If you have followed these steps correctly, you now have a cloud of redirecting particles, as seen in Figure 7 (shown with the previous section's custom shapes). Crucially, this is just one example; there are infinitely many ways to use <code>update</code> and experimentation is a great way to learn them all.</p>
+<h2 id="congratulations">Congratulations! </h2>
+<figure>
+    <img src="convection.gif" alt="a chaotic swirl of line particles in a convection-like pattern">
+    <figcaption>Figure 8: endless possibilities </figcaption>
+</figure>
+You now have a particle system with a multitude of features! No matter how many aspects of the system you pursued, this program will forever serve as an environment for creative experimentation with JavaScript in a visual context. Good luck and farewell!
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
