@@ -1,5 +1,5 @@
 <!DOCTYPE html><html><head>
-      <title>instructions</title>
+      <title>How to Create a Hengine Particle System</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
@@ -243,7 +243,7 @@ renderer
 <p>This section is unordered and optional. Feel free to complete any of these tasks that appeal to you, in any order.</p>
 <h4 id="adding-gravity">Adding Gravity </h4>
 <figure>
-    <img src="fall.png" alt="Randomly colored particles spreading radially while falling">
+    <img src="fall.gif" alt="Randomly colored particles spreading radially while falling">
     <figcaption>Figure 5: falling particles</figcaption>
 </figure>
 <p>To make your particles fall, simply:</p>
@@ -273,7 +273,7 @@ spawner<span class="token punctuation">.</span><span class="token property-acces
 <h4 id="customizing-the-particles-shape">Customizing the Particles' Shape </h4>
 <p>The Hengine's support for <a href="https://elkwizard.github.io/Hengine">many non-circle shapes</a> can be found under <code>Artist2D</code>, <code>DrawRenderer</code>, and <code>StrokeRenderer</code>. To get started with them, the following example explains how to transform your particles into small "vectors" pointing in their direction of motion.</p>
 <figure>
-    <img src="vectors.png" alt="multi-colored arrows radiating outward">
+    <img src="vectors.gif" alt="multi-colored arrows radiating outward">
     <figcaption>Figure 6: custom shapes</figcaption>
 </figure>
 <ol>
@@ -293,7 +293,7 @@ renderer
 <h4 id="applying-custom-movement">Applying Custom Movement </h4>
 <p>One good way to diversify the appearance of your particles is to change their movement after they spawn. This is achieved in the Hengine through the use of an <code>update(particle)</code> function which is called on each time step. Within this function, the entire JavaScript language and Hengine libraries at your disposal. Below is one example of this function:</p>
 <figure>
-    <img src="ricochet.png" alt="a cloud of particles moving in random directions">
+    <img src="ricochet.gif" alt="a cloud of particles moving in random directions">
     <figcaption>Figure 7: changing velocities</figcaption>
 </figure>
 <ol>

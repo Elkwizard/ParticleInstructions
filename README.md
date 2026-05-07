@@ -1,0 +1,2 @@
+# How to Create a Hengine Particle System
+To view an introduction on particle systems in the [Hengine](https://www.github.com/Elkwizard/Hengine), visit the [GitHub pages site](https://elkwizard.github.io/ParticleInstructions) for this repo.

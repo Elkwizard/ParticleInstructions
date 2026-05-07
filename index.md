@@ -240,7 +240,7 @@ For more information on the particle system API, as well as the available method
 This section is unordered and optional. Feel free to complete any of these tasks that appeal to you, in any order.
 #### Adding Gravity
 <figure>
-    <img src="fall.png" alt="Randomly colored particles spreading radially while falling">
+    <img src="fall.gif" alt="Randomly colored particles spreading radially while falling">
     <figcaption>Figure 5: falling particles</figcaption>
 </figure>
 
@@ -281,7 +281,7 @@ If you have been exploring various other options of the particle system, this ex
 The Hengine's support for [many non-circle shapes](https://elkwizard.github.io/Hengine) can be found under `Artist2D`, `DrawRenderer`, and `StrokeRenderer`. To get started with them, the following example explains how to transform your particles into small "vectors" pointing in their direction of motion.
 
 <figure>
-    <img src="vectors.png" alt="multi-colored arrows radiating outward">
+    <img src="vectors.gif" alt="multi-colored arrows radiating outward">
     <figcaption>Figure 6: custom shapes</figcaption>
 </figure>
 
@@ -306,7 +306,7 @@ If you have followed these steps correctly, you now have a colorful vector field
 #### Applying Custom Movement
 One good way to diversify the appearance of your particles is to change their movement after they spawn. This is achieved in the Hengine through the use of an `update(particle)` function which is called on each time step. Within this function, the entire JavaScript language and Hengine libraries at your disposal. Below is one example of this function:
 <figure>
-    <img src="ricochet.png" alt="a cloud of particles moving in random directions">
+    <img src="ricochet.gif" alt="a cloud of particles moving in random directions">
     <figcaption>Figure 7: changing velocities</figcaption>
 </figure>
 
