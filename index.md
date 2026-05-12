@@ -81,8 +81,6 @@
             /* border: 1px black solid; */
             p::before { content: "⚠️Warning: "; }
         }
-
-
     }
 
     .clearfix {
@@ -100,6 +98,9 @@
 This document provides guidance on creating a basic, customizable particle system using the [Hengine](https://www.github.com/Elkwizard/Hengine) web game engine and the [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) programming language. In particular, it covers the basics of **2D** particle systems, including their graphics, physics, and implementation in one engine. By the end of this process, you will have created a particle system similar to the one shown in Figure 1. Notably, this does not discuss JavaScript syntax or semantics, nor the fundamentals of computer graphics or classical physics.
 
 <div class="clearfix"></div>
+
+### (Optional) Particles: Conceptual Background
+The fundamental concept behind creating a particle effect like the one in Figure 1 is that of the "particle spawner". A particle spawner is an imaginary "object" which exists at a given location and emits particles over time. Each particle then becomes an independent entity with its own motion and behavior which (in most cases) eventually decays and is deleted. By repeating this process, an infinite stream of particles can be created without consuming infinite memory and processing power.
 
 ## Prerequisites
 You need a few things before you can get started. Unfortunately, some of these take months or years to acquire. The prerequisites are listed below, in decreasing order of difficulty:
@@ -130,7 +131,8 @@ Let's begin!
 ### Phase 1: Creating the Project
 Creating a new project in the Hengine is extremely simple if you have consistent internet access:
 
-1. **Create a blank text file with the `.html` extension** (e.g. `myParticles.html`) using your text editor of choice. Save this file to your computer.
+1. **Create a blank text file with the `.html` extension** (e.g. `myParticles.html`) using your text editor of choice.
+2. **Save this file to your computer,** preferably in a memorable location, so you can open and refer to it later.
 2. Within the file, **add the following HTML:**
     ```html
     <script src="https://elkwizard.github.io/Hengine/Hengine.js">
@@ -146,12 +148,9 @@ Keep this browser tab open for the duration of the project. If you make changes 
 
 <div class="caution box">
 
-If you do not have consistent internet access, then your program will fail to run. If you have [Git](https://git-scm.com/install/) installed, you can avoid this by running `git clone https://www.github.com/Elkwizard/Hengine.git` to get a local copy of the engine. Then, update the above HTML to reference the `Hengine.js` file in the root of your local copy, rather than the one at `https://...`. This avoids the need for repeated network requests.
+If you do not have consistent internet access, then your program will fail to run when using the steps above. If you have [Git](https://git-scm.com/install/) installed, you can avoid this by running `git clone https://www.github.com/Elkwizard/Hengine.git` to get a local copy of the engine. Then, update the above HTML to reference the `Hengine.js` file in the root of your local copy, rather than the one at `https://...`. This avoids the need for repeated network requests.
 
 </div>
-
-### (Optional) Particles: Conceptual Background
-The fundamental concept behind creating a particle effect like the one in Figure 1 is that of the "particle spawner". A particle spawner is an imaginary "object" which exists at a given location and emits particles over time. Each particle then becomes an independent entity with its own motion and behavior which (in most cases) eventually decays and is deleted. By repeating this process, an infinite stream of particles can be created without consuming infinite memory and processing power.
 
 ### Phase 2: Creating a Basic System
 In the Hengine, the world consists of a set of `WorldObject`s, each of which can appear on the screen and respond to various events from the user or the engine. Collections of event-responses or "behaviors" are encapsulated into the `ElementScript` class. To create your particle system, you will create an object to act as a spawner, and then give it the Hengine's built-in particle management behaviors.
@@ -237,7 +236,7 @@ For more information on the particle system API, as well as the available method
 </div>	
 
 ### (Optional) Phase 4: Further Customization
-This section is unordered and optional. Feel free to complete any of these tasks that appeal to you, in any order.
+If you like your particle system, but want to make it more unique, this section provides several strategies for exploring more elaborate graphical possibilities. However, this section is unordered and optional. Feel free to complete any of these tasks that appeal to you, in any order.
 #### Adding Gravity
 <figure>
     <img src="fall.gif" alt="Randomly colored particles spreading radially while falling">

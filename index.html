@@ -107,8 +107,6 @@
             /* border: 1px black solid; */
             p::before { content: "⚠️Warning: "; }
         }
-
-
     }
 
     .clearfix {
@@ -123,6 +121,8 @@
 </figure>
 <p>This document provides guidance on creating a basic, customizable particle system using the <a href="https://www.github.com/Elkwizard/Hengine">Hengine</a> web game engine and the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a> programming language. In particular, it covers the basics of <strong>2D</strong> particle systems, including their graphics, physics, and implementation in one engine. By the end of this process, you will have created a particle system similar to the one shown in Figure 1. Notably, this does not discuss JavaScript syntax or semantics, nor the fundamentals of computer graphics or classical physics.</p>
 <div class="clearfix"></div>
+<h3 id="optional-particles-conceptual-background">(Optional) Particles: Conceptual Background </h3>
+<p>The fundamental concept behind creating a particle effect like the one in Figure 1 is that of the "particle spawner". A particle spawner is an imaginary "object" which exists at a given location and emits particles over time. Each particle then becomes an independent entity with its own motion and behavior which (in most cases) eventually decays and is deleted. By repeating this process, an infinite stream of particles can be created without consuming infinite memory and processing power.</p>
 <h2 id="prerequisites">Prerequisites </h2>
 <p>You need a few things before you can get started. Unfortunately, some of these take months or years to acquire. The prerequisites are listed below, in decreasing order of difficulty:</p>
 <ol>
@@ -153,7 +153,8 @@
 <h3 id="phase-1-creating-the-project">Phase 1: Creating the Project </h3>
 <p>Creating a new project in the Hengine is extremely simple if you have consistent internet access:</p>
 <ol>
-<li><strong>Create a blank text file with the <code>.html</code> extension</strong> (e.g. <code>myParticles.html</code>) using your text editor of choice. Save this file to your computer.</li>
+<li><strong>Create a blank text file with the <code>.html</code> extension</strong> (e.g. <code>myParticles.html</code>) using your text editor of choice.</li>
+<li><strong>Save this file to your computer,</strong> preferably in a memorable location, so you can open and refer to it later.</li>
 <li>Within the file, <strong>add the following HTML:</strong><pre data-role="codeBlock" data-info="html" class="language-html html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://elkwizard.github.io/Hengine/Hengine.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
     <span class="token comment">// this is where the rest of your code will go</span>
 </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
@@ -164,10 +165,8 @@
 <p>Keep this browser tab open for the duration of the project. If you make changes to your code and the program seems to behave the same, remember to save your file and reload the tab. Additionally, if things don't seem to be working properly, open the developer console (with Right Click + Inspect, Ctrl/Cmd + Shift + J, or F12) to see possible error messages.</p>
 </div>
 <div class="caution box">
-<p>If you do not have consistent internet access, then your program will fail to run. If you have <a href="https://git-scm.com/install/">Git</a> installed, you can avoid this by running <code>git clone https://www.github.com/Elkwizard/Hengine.git</code> to get a local copy of the engine. Then, update the above HTML to reference the <code>Hengine.js</code> file in the root of your local copy, rather than the one at <code>https://...</code>. This avoids the need for repeated network requests.</p>
+<p>If you do not have consistent internet access, then your program will fail to run when using the steps above. If you have <a href="https://git-scm.com/install/">Git</a> installed, you can avoid this by running <code>git clone https://www.github.com/Elkwizard/Hengine.git</code> to get a local copy of the engine. Then, update the above HTML to reference the <code>Hengine.js</code> file in the root of your local copy, rather than the one at <code>https://...</code>. This avoids the need for repeated network requests.</p>
 </div>
-<h3 id="optional-particles-conceptual-background">(Optional) Particles: Conceptual Background </h3>
-<p>The fundamental concept behind creating a particle effect like the one in Figure 1 is that of the "particle spawner". A particle spawner is an imaginary "object" which exists at a given location and emits particles over time. Each particle then becomes an independent entity with its own motion and behavior which (in most cases) eventually decays and is deleted. By repeating this process, an infinite stream of particles can be created without consuming infinite memory and processing power.</p>
 <h3 id="phase-2-creating-a-basic-system">Phase 2: Creating a Basic System </h3>
 <p>In the Hengine, the world consists of a set of <code>WorldObject</code>s, each of which can appear on the screen and respond to various events from the user or the engine. Collections of event-responses or "behaviors" are encapsulated into the <code>ElementScript</code> class. To create your particle system, you will create an object to act as a spawner, and then give it the Hengine's built-in particle management behaviors.</p>
 <ol>
@@ -240,7 +239,7 @@ renderer
 <p>For more information on the particle system API, as well as the available methods on <code>renderer</code> and <code>particle</code>, see the <a href="https://elkwizard.github.io/Hengine">Hengine Documentation</a>. In particular, information about <code>renderer</code> can be found under <code>Artist2D</code>, and information about <code>particle</code> can be found under <code>PARTICLE_SYSTEM</code>.</p>
 </div>	
 <h3 id="optional-phase-4-further-customization">(Optional) Phase 4: Further Customization </h3>
-<p>This section is unordered and optional. Feel free to complete any of these tasks that appeal to you, in any order.</p>
+<p>If you like your particle system, but want to make it more unique, this section provides several strategies for exploring more elaborate graphical possibilities. However, this section is unordered and optional. Feel free to complete any of these tasks that appeal to you, in any order.</p>
 <h4 id="adding-gravity">Adding Gravity </h4>
 <figure>
     <img src="fall.gif" alt="Randomly colored particles spreading radially while falling">
